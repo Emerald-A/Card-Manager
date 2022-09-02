@@ -1,0 +1,199 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+html, body{
+     height: 100%;
+     overflow-y: hidden;
+     /* background: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62)); */
+     background: hsl(278, 68%, 11%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.main{
+     display: flex;
+     width: 99.8%;
+     height: 97.8%;
+     border-radius: 10px;
+     margin: 0;
+     background: white;
+}
+
+.main .bgDesign{
+     width: 25%;
+     height: 100%;
+     background: url(../images/bg-main-desktop.png);
+     margin: 0;
+     
+}
+
+.main .cardDesigns{
+     width: 130%;
+     height: 70%;
+     /* border: 2px solid black; */
+     margin-left: 30%;
+     margin-top: 25%;
+     padding: 5%;
+}
+
+.main .cardDesigns .card1{
+     width: 75%;
+     height: 38%;
+     /* border: 2px solid green; */
+     background: url(../images/bg-card-front.png);
+     background-size: cover;
+     border-radius: 10px;
+     background-repeat: no-repeat;
+     margin: 4%;
+     box-shadow: 10px 10px 40px hsl(279, 6%, 55%);
+}
+
+.main .cardDesigns .card2{
+     width: 75%;
+     height: 38%;
+     /* border: 2px solid green; */
+     background: url(../images/bg-card-back.png);
+     background-size: cover;
+     border-radius: 10px;
+     background-repeat: no-repeat;
+     margin: 4%;
+     margin-left: 20%;
+     box-shadow: 10px 10px 40px hsl(279, 6%, 55%);
+}
+
+.main .mainContent{
+     width: 75%;
+     align-items: center;
+     justify-content: center;
+}
+
+.main .mainContent .form{
+     width: 40%;
+     padding: 3%;
+     /* border: 1px solid hsl(278, 68%, 11%); */
+     margin: auto;
+     margin-top: 15%;
+     /* display: flex;
+     flex-wrap: wrap; */
+}
+
+.main .mainContent .form .txtFieldL{
+     width: 100%;
+     height: 40px;
+     font-size: 18px;
+     font-family: 'Space Grotesk', sans-serif;
+     outline: none;
+     padding-left: 3%;
+     margin-bottom: 4%;
+     margin-top: 2%;
+}
+
+.dateandCVC{
+     width: 100%;
+     display: flex;
+}
+label{
+     font-size: 14px;
+     font-family: 'Space Grotesk', sans-serif;
+     color: hsl(278, 68%, 11%);
+}
+
+.main .mainContent .form .txtFieldS{
+     width: 45%;
+     height: 45px;
+     font-size: 18px;
+     font-family: 'Space Grotesk', sans-serif;
+     outline: none;
+     padding: 1%;
+     margin-bottom: 4%;
+     margin-top: 2%;
+     text-align: center;
+}
+
+
+.main .mainContent .form .dCVC{
+     width: 100% !important;
+     margin: 0;
+     padding: 0;
+     
+}
+
+.expDateandCVC{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.main .mainContent .form  .txtFieldM{
+     width: 100%;
+     height: 35px;
+     font-size: 18px;
+     font-family: 'Space Grotesk', sans-serif;
+     outline: none;
+     padding: 1%;
+     padding-left: 3%;
+     margin-bottom: 4%;
+     margin-top: 2%;
+     margin-right: 6%;
+     /* text-align: center; */
+}
+
+/* .dateandCVC{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     border: 1px solid purple;
+} */
+
+.main .mainContent .form .expDate{
+     display: flex;
+     width: 100% !important;
+     margin-top: 2%;
+     justify-content: space-between;
+     
+}
+
+.expDateContainer{
+     width: 35%;
+}
+
+.cvcContainer{
+     width: 55%;
+}
+
+.lgButton{
+     width: 80%;
+     height: 45px;
+     font-family: 'Space Grotesk', sans-serif;
+     background: hsl(278, 68%, 11%);
+     color: white;
+     font-size: 18px;
+     margin-top: 10%;
+     align-items: center;
+     border-radius: 7px;
+}
+
+input, select{
+     border-radius: 7px;
+     outline: none;
+     box-shadow: none;
+     border: 2px solid hsl(270, 3%, 87%);
+}
+
+select{
+     appearance: none;
+     /* color: hsl(270, 3%, 87%); */
+}
+
+.myplaceHolder{
+     color: hsl(270, 3%, 87%) !important;
+}

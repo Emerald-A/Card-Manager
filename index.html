@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Interactive Card Details Form</title>
+
+     <!-- Styling -->
+     <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+     <div class="main">
+          <div class="bgDesign">
+               <div class="cardDesigns">
+                    <div class="card1"></div>
+                    <div class="card2"></div>
+               </div>
+          </div>
+          <div class="mainContent">
+               <div class="form">
+                    <label for="cardholderName">CARDHOLDER NAME</label> 
+                    <input type="text" placeholder="e.g. Adam Smith" class="txtFieldL" spellcheck="false" name="cardholderName">
+                    <label for="cardNumber">CARD NUMBER</label> 
+                    <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="txtFieldL" name="cardNumber" id="cardNumber">
+                    <br>
+
+
+                    <div class="expDateandCVC">
+
+                         <div class="expDateContainer">
+
+                              <label for="expDate">EXP. DATE (MM/YY)</label>
+
+                              <div class="expDate" name="expDate">
+
+                                   <select type="" class="txtFieldS month" id="MM" ondblclick="expDateEditor()"> 
+
+                                        <option value="MM" style="color: hsl(270, 3%, 87%);">MM</option>
+
+                                   </select>
+                                   
+
+                                   <select type="m" class="txtFieldS" id="YY" ondblclick="expDateEditor()">
+                                        <option value="YY" class="placeHolder">YY</option>
+                                   </select>
+                              </div>
+                         </div>
+                         <div class="cvcContainer">
+                              <label for="cvc">CVC</label>
+                              <div class="dCVC" name="cvc">
+                                   <input type="text" placeholder="e.g. 123"  class="txtFieldM" maxlength="3" required>
+                              </div>
+                         </div>
+                    </div>
+                    <center><button class="lgButton"> Continue </button></center>
+               </div>
+          </div>
+     </div>
+
+     <script src="JS/script.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+</html>
