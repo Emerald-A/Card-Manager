@@ -54,8 +54,49 @@ input[type=number] {
      background-repeat: no-repeat;
      margin: 4%;
      box-shadow: 10px 10px 40px hsl(279, 6%, 55%);
+     padding: 2%;
 }
 
+.main .cardDesigns .card1 h4{
+     width: 100%;
+     font-size: 22px;
+     color: white;
+     font-family: 'Space Grotesk', sans-serif;
+     font-weight: 300;
+     margin: auto;
+     letter-spacing: 4px;
+     margin-top: 40%;
+}
+
+.main .cardDesigns .card1 span{
+     width: 100%;
+     font-size: 16px;
+     color: white;
+     font-family: 'Space Grotesk', sans-serif;
+     font-weight: 300;
+     margin: auto;
+     letter-spacing: 3px;
+}
+.card2{
+     display: flex;
+}
+.main .cardDesigns .card2 span{
+     width: 100%;
+     font-size: 16px;
+     color: black;
+     font-family: 'Space Grotesk', sans-serif;
+     /* font-weight: 00; */
+     /* margin: auto; */
+     letter-spacing: 3px;
+     margin-top: 26%;
+     margin-left: 87%;
+}
+.nameanddate{
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     margin-top: 4%;
+}
 .main .cardDesigns .card2{
      width: 75%;
      height: 38%;
@@ -67,6 +108,7 @@ input[type=number] {
      margin: 4%;
      margin-left: 20%;
      box-shadow: 10px 10px 40px hsl(279, 6%, 55%);
+     padding: 2%;
 }
 
 .main .mainContent{
