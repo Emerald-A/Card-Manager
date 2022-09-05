@@ -149,8 +149,8 @@ label{
 }
 
 .main .mainContent .form .txtFieldS{
-     width: 45%;
-     height: 45px;
+     width: 42%;
+     height: 40px;
      font-size: 18px;
      font-family: 'Space Grotesk', sans-serif;
      outline: none;
@@ -238,4 +238,12 @@ select{
 
 .myplaceHolder{
      color: hsl(270, 3%, 87%) !important;
+}
+
+.dNone{
+     display: none;
+}
+
+.confirmation{
+     border: 1px solid black;
 }

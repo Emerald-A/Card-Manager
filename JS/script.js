@@ -16,11 +16,8 @@ const date = new Date();
 var cardNum = document.getElementById("cardNumber");
 
 cardNum.onkeydown = function () {
-    if (cardNum.value.length > 0) {
-
-        if (cardNum.value.length % 4 == 0) {
-            cardNum.value += "    ";
-        }
+    if (cardNum.value.length % 6 == 0) {
+        cardNum.value += "  ";
     }
 }
 
@@ -54,3 +51,18 @@ function expDateEditor(params) {
     alert(expMonth);
 }
 
+
+
+let cardHolderName = "";
+let cardNumber = "";
+let CVC = "";
+
+function valueAlerter(params) {
+    cardHolderName = document.getElementById("cardHolderName").value;
+    cardNumber = document.getElementById("cardNumber").value;
+    CVC = document.getElementById("CVC").value;
+
+    document.getElementById("holderName").innerText = cardHolderName;
+    document.getElementById("uniqueNumber").innerText = cardNumber;
+    document.getElementById("cardCVC").innerText = CVC;
+}
