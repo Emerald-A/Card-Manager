@@ -12,14 +12,20 @@
      
 // }
 const date = new Date();
-
+let arr = [];
+let product = JSON.parse(localStorage.getItem('details'));
+if (product != null) {
+    arr = product;
+}
 var cardNum = document.getElementById("cardNumber");
 
-cardNum.onkeydown = function () {
-    if (cardNum.value.length % 6 == 0) {
-        cardNum.value += "  ";
-    }
+cardNum.onkeyup = function () {
+    if (cardNum.value.length % 5 == 0) {
+        cardNum.value += " ";
+    } 
+  
 }
+
 
 
 
@@ -56,13 +62,56 @@ function expDateEditor(params) {
 let cardHolderName = "";
 let cardNumber = "";
 let CVC = "";
+let mm = "";
+let yy = "";
 
 function valueAlerter(params) {
+
     cardHolderName = document.getElementById("cardHolderName").value;
     cardNumber = document.getElementById("cardNumber").value;
     CVC = document.getElementById("CVC").value;
+    mm = document.getElementById("MM").value;
+    yy = document.getElementById("YY").value;
+
+    // console.log(cardHolderName);
+    // console.log(cardNumber);
+    // console.log(CVC);
+     if (cardHolderName !== "" && cardNumber !== "" && CVC !== "") {
+        arr.push(
+            {
+               name: cardHolderName,
+               cardNumber: cardNumber,
+               cvv: CVC, 
+               mm: mm, 
+               yy: yy, 
+            }
+            );
+     }
+   
+
+        console.log("array",arr);
+        localStorage.setItem("details", JSON.stringify(arr));
+
+        success();
+       
+
+    cardHolderName = document.getElementById("cardHolderName").value = "";
+    cardNumber = document.getElementById("cardNumber").value = "";
+    CVC = document.getElementById("CVC").value = "";
+
+     document.getElementById("MM").value = "";
+     document.getElementById("YY").value = "";
 
     document.getElementById("holderName").innerText = cardHolderName;
     document.getElementById("uniqueNumber").innerText = cardNumber;
     document.getElementById("cardCVC").innerText = CVC;
+}
+
+function success(){
+    swal({
+    title: "Good job!",
+    text: "SUCCESSFULLY ADDED CARD!",
+    icon: "success",
+    button: "OK!",
+});
 }

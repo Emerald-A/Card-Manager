@@ -3,7 +3,7 @@
 
 html, body{
      height: 100%;
-     overflow-y: hidden;
+     /* overflow-y: hidden; */
      /* background: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62)); */
      background: hsl(278, 68%, 11%);
 }
